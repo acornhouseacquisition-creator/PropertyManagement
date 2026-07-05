@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acorn Property Group | Florida Property Checks &amp; Property Care</title>
+<title>Acorn House Group | Florida Property Checks &amp; Property Care</title>
 <meta name="description" content="Property checks and ongoing property care for vacation homes, second homes, and investment properties across Sarasota, Manatee, Charlotte, Lee, Collier, Hillsborough, Pinellas, Broward, Palm Beach, Miami-Dade, St. Lucie, and Martin County, Florida.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --black:#0a0a0a;
@@ -83,6 +83,45 @@
   .trust-item{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--cream);white-space:nowrap;}
   .trust-item svg{width:16px;height:16px;color:var(--gold);flex-shrink:0;}
 
+  /* ---------- WHY HOMEOWNERS TRUST US / FOUNDER ---------- */
+  .founder-section{padding:130px 40px;background:var(--black);}
+  .founder-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:0.85fr 1.15fr;gap:80px;align-items:center;}
+  .founder-portrait-wrap{text-align:center;}
+  .founder-portrait{
+    border-radius:12px;overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 0 6px rgba(250,200,0,0.06);
+    position:relative;
+  }
+  .founder-portrait::after{content:"";position:absolute;inset:0;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(250,200,0,0.25);}
+  .founder-portrait img{width:100%;display:block;object-fit:cover;aspect-ratio:4/5;}
+  .founder-signature{margin-top:22px;font-family:'Caveat',cursive;font-size:34px;color:var(--gold);}
+  .founder-signature small{display:block;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-top:2px;}
+
+  .founder-copy h2{font-size:clamp(28px,3.2vw,40px);color:var(--cream);line-height:1.2;margin-top:14px;font-weight:500;}
+  .founder-copy p{margin-top:20px;font-size:15.5px;line-height:1.85;color:var(--muted);}
+  .founder-pull{
+    margin:26px 0;padding:4px 0 4px 24px;border-left:2px solid var(--gold);
+    font-family:'Fraunces',serif;font-size:20px;font-style:italic;color:var(--cream);line-height:1.5;
+  }
+  .founder-signoff{margin-top:28px;font-size:14px;color:var(--muted);}
+  .founder-signoff strong{color:var(--cream);}
+
+  .trust-highlights{max-width:1280px;margin:80px auto 0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;}
+  .th-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:30px 22px;text-align:center;transition:border-color .2s ease, transform .2s ease;}
+  .th-card:hover{border-color:rgba(250,200,0,0.45);transform:translateY(-4px);}
+  .th-card .th-icon{width:44px;height:44px;margin:0 auto 18px;color:var(--gold);}
+  .th-card h4{font-size:14.5px;color:var(--cream);margin-bottom:10px;font-family:'Fraunces',serif;font-weight:600;}
+  .th-card p{font-size:12.5px;line-height:1.6;color:var(--muted);}
+
+  .founder-quote{max-width:760px;margin:100px auto 0;text-align:center;}
+  .founder-quote .fq-mark{font-family:'Fraunces',serif;font-size:56px;color:var(--gold);line-height:0.5;display:block;margin-bottom:10px;}
+  .founder-quote p{font-family:'Fraunces',serif;font-size:clamp(22px,2.6vw,30px);font-style:italic;color:var(--cream);line-height:1.5;}
+  .founder-quote .fq-signoff{margin-top:28px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--muted);}
+  .founder-quote .fq-signoff strong{display:block;color:var(--gold);font-size:16px;font-family:'Fraunces',serif;margin-bottom:2px;}
+
+  .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .fade-up.in{opacity:1;transform:translateY(0);}
   /* ---------- WHAT WE DO ---------- */
   .services{padding:110px 40px 120px;}
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1320px;margin:0 auto;}
@@ -149,6 +188,8 @@
   .booking-close:hover{color:var(--gold-deep);}
   .booking-panel h3{font-size:24px;color:#161616;margin-bottom:6px;}
   .booking-panel p.bsub{font-size:14px;color:rgba(20,20,20,0.6);margin-bottom:18px;}
+  .booking-payment-note{margin-top:16px;font-size:11.5px;line-height:1.6;color:rgba(20,20,20,0.5);text-align:center;}
+  .booking-payment-note a{color:var(--gold-deep);text-decoration:underline;}
   body.booking-open{overflow:hidden;}
   .expand-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:30px;gap:20px;flex-wrap:wrap;}
   .expand-head h3{font-size:26px;color:var(--cream);}
@@ -193,13 +234,13 @@
   .modal-fine{font-size:12px;color:rgba(20,20,20,0.45);text-align:center;margin-top:16px;}
   body.modal-open{overflow:hidden;}
 
-  /* ---------- WHO CARD (profile style) ---------- */
-  .who-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:32px 28px;display:flex;flex-direction:column;align-items:flex-start;transition:border-color .2s ease;}
-  .who-card:hover{border-color:rgba(250,200,0,0.45);}
-  .who-card svg{width:30px;height:30px;color:var(--gold);flex-shrink:0;margin-bottom:16px;}
-  .who-card h3{font-size:17px;color:var(--cream);margin-bottom:8px;}
-  .who-card p{font-size:13.5px;color:var(--muted);line-height:1.65;margin-bottom:20px;flex:1;}
-  .see-btn{font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:0;}
+  /* ---------- WHO CARD (profile style, on white section) ---------- */
+  .who-card{background:#faf8f2;border:1px solid rgba(184,134,11,0.2);border-radius:6px;padding:32px 28px;display:flex;flex-direction:column;align-items:flex-start;transition:border-color .2s ease;}
+  .who-card:hover{border-color:var(--gold-deep);}
+  .who-card svg{width:30px;height:30px;color:var(--gold-deep);flex-shrink:0;margin-bottom:16px;}
+  .who-card h3{font-size:17px;color:#161616;margin-bottom:8px;}
+  .who-card p{font-size:13.5px;color:rgba(20,20,20,0.62);line-height:1.65;margin-bottom:20px;flex:1;}
+  .see-btn{font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold-deep);display:inline-flex;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:0;}
   .see-btn:hover{text-decoration:underline;}
   .see-btn svg{width:13px;height:13px;margin:0;}
 
@@ -230,12 +271,12 @@
   .expand-panel .license-note{color:rgba(20,20,20,0.45);margin-top:20px;}
 
   /* ---------- WHO WE HELP ---------- */
-  .who{padding:100px 40px;background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  /* ---------- WHO WE HELP (white background) ---------- */
+  .who{padding:100px 40px;background:#ffffff;}
+  .who .eyebrow{color:var(--gold-deep);}
+  .who .eyebrow-line,.who .rule-center{background:var(--gold-deep);}
+  .who .section-head h2{color:#161616;}
   .who-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .who-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:30px 26px;display:flex;align-items:center;gap:16px;transition:border-color .2s ease;}
-  .who-card:hover{border-color:rgba(250,200,0,0.45);}
-  .who-card svg{width:30px;height:30px;color:var(--gold);flex-shrink:0;}
-  .who-card span{font-size:15px;font-weight:600;color:var(--cream);}
 
   /* ---------- WHY CHOOSE ---------- */
   .why{padding:110px 40px;}
@@ -385,6 +426,10 @@
     .checks-detail{grid-template-columns:1fr;}
     .expand-head{flex-direction:column;}
     .report-inner,.areas-inner{grid-template-columns:1fr;gap:36px;}
+    .founder-inner{grid-template-columns:1fr;gap:44px;}
+    .founder-portrait{max-width:340px;margin:0 auto;}
+    .trust-highlights{grid-template-columns:repeat(2,1fr);}
+    .founder-section{padding:80px 24px;}
 
     .steps{grid-template-columns:1fr;gap:28px;}
     .step::after{display:none;}
@@ -402,8 +447,8 @@
 
 <header>
   <nav>
-    <a href="#" class="logo" aria-label="Acorn Property Group home">
-      <img src="https://i.imgur.com/eh1IVjV.png" alt="Acorn Property Group">
+    <a href="#" class="logo" aria-label="Acorn House Group home">
+      <img src="https://i.imgur.com/eh1IVjV.png" alt="Acorn House Group">
     </a>
     <ul class="nav-links">
       <li><a href="#" class="active">Home</a></li>
@@ -457,91 +502,6 @@
     <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Built for Florida Homeowners &amp; Investors</div>
   </div>
 </div>
-
-<!-- ================= WHAT WE DO ================= -->
-<section class="services" id="services">
-  <div class="section-head">
-    <div class="eyebrow">What We Do</div>
-    <h2>Complete Property Care Solutions</h2>
-    <div class="rule-center"></div>
-  </div>
-  <div class="cards">
-    <div class="card clickable" onclick="toggleExpand('checks')" data-key="checks" tabindex="0" role="button" aria-expanded="false">
-      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="6.5"/><path d="M14.8 14.8L21 21"/></svg></div>
-      <h3>Property Checks</h3>
-      <p>For owners and investors who need one visit and a clear property status report.</p>
-      <span class="offer-tag">Special Offer</span>
-      <div class="card-price offer">$89<span>one-time visit</span></div>
-      <div class="best-for">
-        <div class="bf-label">Best For</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Wholesalers</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Real estate investors</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Out of state buyers</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Private lenders</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Realtors</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Probate or inherited homes</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Vacant properties</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Snowbirds who need a one time check</li>
-        </ul>
-      </div>
-      <span class="card-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-    </div>
-    <div class="card clickable" onclick="toggleExpand('care')" data-key="care" tabindex="0" role="button" aria-expanded="false">
-      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg></div>
-      <h3>Property Care</h3>
-      <p>For homeowners who want ongoing peace of mind while they are away.</p>
-      <div class="card-price">$89<span>/month, from</span></div>
-      <div class="best-for">
-        <div class="bf-label">Best For</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Snowbirds</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Second home owners</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Vacation home owners</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Luxury homeowners</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Absentee owners</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who need monthly maintenance coordination</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who don't want to manage lawn, pool, pest control, filters, vendors, and emergencies</li>
-        </ul>
-      </div>
-      <span class="card-cta">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-    </div>
-    <div class="card clickable" onclick="toggleExpand('management')" data-key="management" tabindex="0" role="button" aria-expanded="false">
-      <span class="soon-badge">Coming Soon</span>
-      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
-      <h3>Property Management</h3>
-      <p>For rental property owners who want full service management once available.</p>
-      <div class="best-for">
-        <div class="bf-label">Best For</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Long term rental owners</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Out of state landlords</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Investors with rental portfolios</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who want tenant placement</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who need rent collection and maintenance coordination</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners planning to rent their second home in the future</li>
-        </ul>
-      </div>
-      <p class="license-note">Property management services will be offered only when properly licensed or through a licensed Florida broker.</p>
-      <span class="card-cta">Notify Me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-    </div>
-  </div>
-
-  <div class="expand-overlay" id="expandOverlay" onclick="if(event.target===this) closeExpand()">
-    <div class="expand-panel" id="expandPanel">
-      <button class="expand-close" onclick="closeExpand()" aria-label="Close">&times;</button>
-      <div class="expand-video" id="expandVideo"></div>
-      <div class="expand-panel-inner-wrap">
-        <div class="option-tabs" id="optionTabs">
-          <button class="option-tab" data-key="checks" onclick="toggleExpand('checks')">Property Checks</button>
-          <button class="option-tab" data-key="care" onclick="toggleExpand('care')">Property Care</button>
-          <button class="option-tab" data-key="management" onclick="toggleExpand('management')">Property Management</button>
-        </div>
-        <div class="expand-inner" id="expandInner"></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ================= WHY CHOOSE ================= -->
 <section class="why" id="why">
@@ -670,6 +630,74 @@
   </div>
 </div>
 
+<!-- ================= MEET THE FOUNDER / WHY HOMEOWNERS TRUST US ================= -->
+<section class="founder-section">
+  <div class="founder-inner">
+    <div class="founder-portrait-wrap fade-up">
+      <div class="founder-portrait">
+        <img src="https://i.imgur.com/65x2l5z.jpg" alt="Daniel Ghinda, Founder of Acorn House Group">
+      </div>
+      <div class="founder-signature">Daniel Ghinda<small>Founder, Acorn House Group</small></div>
+    </div>
+
+    <div class="founder-copy fade-up">
+      <div class="eyebrow">Meet the Founder</div>
+      <div class="eyebrow-line"></div>
+      <h2>Trust Is Everything When Someone Is Caring For Your Home.</h2>
+
+      <p>My name is Daniel Ghinda, founder of Acorn House Group. For more than five years, I've worked in real estate, helping homeowners, investors, buyers, and sellers protect and transition one of their most valuable assets.</p>
+
+      <p>I also own property myself, which means I've sat on both sides of this — as the person trying to find someone trustworthy to look after a home, and now as the person building the team homeowners can actually rely on. That firsthand experience shapes exactly what services we offer and how we deliver them.</p>
+
+      <p>During those years, I noticed the same concern come up again and again. Many homeowners spend months away from their Florida property — some own vacation homes, some inherited a home, some are investors, and others simply live in another state. No matter the reason, they all shared one question:</p>
+
+      <div class="founder-pull">"Who can I truly trust to look after my home?"</div>
+
+      <p>A house is more than a building. It holds memories, valuable belongings, and often represents one of the largest investments a family will ever make. Most people are understandably uncomfortable giving access to someone they don't know — and that's exactly why I created Acorn House Group.</p>
+
+      <p>Our mission is simple: to become the trusted local team that treats every home with genuine care and respect. When you choose Acorn, you're not simply hiring someone to perform a checklist — you're building a relationship with a dedicated Property Specialist who becomes your trusted eyes on the property whenever you can't be there.</p>
+
+      <p>We understand that inviting someone into your home requires trust. That's why every visit is approached with professionalism, respect, and the same level of care we'd expect if someone were looking after our own family's property. We care for your home like family — and the same way we care for our own properties. Communication, honesty, and consistency are the foundation of that trust.</p>
+
+      <p class="founder-signoff">Our goal is simple: to give you complete peace of mind, knowing your property is being cared for by people who genuinely care.</p>
+    </div>
+  </div>
+
+  <div class="trust-highlights fade-up">
+    <div class="th-card">
+      <div class="th-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h4>Trusted Real Estate Experience</h4>
+      <p>More than five years serving homeowners and investors.</p>
+    </div>
+    <div class="th-card">
+      <div class="th-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
+      <h4>Dedicated Property Specialists</h4>
+      <p>The same trusted professional whenever possible.</p>
+    </div>
+    <div class="th-card">
+      <div class="th-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div>
+      <h4>Detailed Property Reports</h4>
+      <p>Photos, video, and updates after every visit.</p>
+    </div>
+    <div class="th-card">
+      <div class="th-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.4 2.1L8 10.3a16 16 0 006 6l1.5-1.4a2 2 0 012.1-.4c1 .4 2 .6 3 .7a2 2 0 011.7 2z"/></svg></div>
+      <h4>Clear Communication</h4>
+      <p>Fast responses and transparent updates.</p>
+    </div>
+    <div class="th-card">
+      <div class="th-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 8.6c0 4-8.8 10.4-8.8 10.4S3.2 12.6 3.2 8.6a4.8 4.8 0 018.8-2.7 4.8 4.8 0 018.8 2.7z"/></svg></div>
+      <h4>We Care Like Family</h4>
+      <p>Every property is treated with respect and genuine care.</p>
+    </div>
+  </div>
+
+  <div class="founder-quote fade-up">
+    <span class="fq-mark">&ldquo;</span>
+    <p>Our goal isn't simply to check your property. It's to become the people you trust whenever you can't be there.</p>
+    <div class="fq-signoff"><strong>Daniel Ghinda</strong>Founder, Acorn House Group</div>
+  </div>
+</section>
+
 <!-- ================= HOW IT WORKS ================= -->
 <section class="steps-sec" id="how">
   <div class="section-head">
@@ -682,6 +710,91 @@
     <div class="step"><div class="snum">2</div><h4>Property Specialist Visits</h4></div>
     <div class="step"><div class="snum">3</div><h4>Receive Your Report</h4></div>
     <div class="step"><div class="snum">4</div><h4>Relax</h4></div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE DO ================= -->
+<section class="services" id="services">
+  <div class="section-head">
+    <div class="eyebrow">What We Do</div>
+    <h2>Complete Property Care Solutions</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="cards">
+    <div class="card clickable" onclick="toggleExpand('checks')" data-key="checks" tabindex="0" role="button" aria-expanded="false">
+      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="6.5"/><path d="M14.8 14.8L21 21"/></svg></div>
+      <h3>Property Checks</h3>
+      <p>For owners and investors who need one visit and a clear property status report.</p>
+      <span class="offer-tag">Special Offer</span>
+      <div class="card-price offer">$89<span>one-time visit</span></div>
+      <div class="best-for">
+        <div class="bf-label">Best For</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Wholesalers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Real estate investors</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Out of state buyers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Private lenders</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Realtors</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Probate or inherited homes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Vacant properties</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Snowbirds who need a one time check</li>
+        </ul>
+      </div>
+      <span class="card-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+    <div class="card clickable" onclick="toggleExpand('care')" data-key="care" tabindex="0" role="button" aria-expanded="false">
+      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg></div>
+      <h3>Property Care</h3>
+      <p>For homeowners who want ongoing peace of mind while they are away.</p>
+      <div class="card-price">$89<span>/month, from</span></div>
+      <div class="best-for">
+        <div class="bf-label">Best For</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Snowbirds</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Second home owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Vacation home owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Luxury homeowners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Absentee owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who need monthly maintenance coordination</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who don't want to manage lawn, pool, pest control, filters, vendors, and emergencies</li>
+        </ul>
+      </div>
+      <span class="card-cta">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+    <div class="card clickable" onclick="toggleExpand('management')" data-key="management" tabindex="0" role="button" aria-expanded="false">
+      <span class="soon-badge">Coming Soon</span>
+      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
+      <h3>Property Management</h3>
+      <p>For rental property owners who want full service management once available.</p>
+      <div class="best-for">
+        <div class="bf-label">Best For</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Long term rental owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Out of state landlords</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Investors with rental portfolios</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who want tenant placement</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who need rent collection and maintenance coordination</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners planning to rent their second home in the future</li>
+        </ul>
+      </div>
+      <p class="license-note">Property management services will be offered only when properly licensed or through a licensed Florida broker.</p>
+      <span class="card-cta">Notify Me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+  </div>
+
+  <div class="expand-overlay" id="expandOverlay" onclick="if(event.target===this) closeExpand()">
+    <div class="expand-panel" id="expandPanel">
+      <button class="expand-close" onclick="closeExpand()" aria-label="Close">&times;</button>
+      <div class="expand-video" id="expandVideo"></div>
+      <div class="expand-panel-inner-wrap">
+        <div class="option-tabs" id="optionTabs">
+          <button class="option-tab" data-key="checks" onclick="toggleExpand('checks')">Property Checks</button>
+          <button class="option-tab" data-key="care" onclick="toggleExpand('care')">Property Care</button>
+          <button class="option-tab" data-key="management" onclick="toggleExpand('management')">Property Management</button>
+        </div>
+        <div class="expand-inner" id="expandInner"></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -709,7 +822,7 @@
       </ul>
     </div>
     <div class="areas-media">
-      <img src="https://i.imgur.com/Kytxt4h.jpg" alt="Map of Florida counties served by Acorn Property Group">
+      <img src="https://i.imgur.com/Kytxt4h.jpg" alt="Map of Florida counties served by Acorn House Group">
     </div>
   </div>
 </section>
@@ -731,7 +844,7 @@
     <details class="faq-item"><summary>Can you meet a contractor at my property?</summary><p>Yes, we can coordinate contractor access as part of a Property Check or ongoing Property Care plan.</p></details>
     <details class="faq-item"><summary>Do you collect mail and packages?</summary><p>Yes, mail and package checks are included in every Property Check visit.</p></details>
     <details class="faq-item"><summary>What areas of Florida do you serve?</summary><p>We currently serve counties along Florida's Gulf and East Coasts — see our full Service Area section above.</p></details>
-    <details class="faq-item"><summary>Is Acorn Property Group insured?</summary><p>Insured coverage is coming soon as we build out our service area. We're happy to share our current status when you reach out.</p></details>
+    <details class="faq-item"><summary>Is Acorn House Group insured?</summary><p>Insured coverage is coming soon as we build out our service area. We're happy to share our current status when you reach out.</p></details>
     <details class="faq-item"><summary>Do you offer property management?</summary><p>Full-service property management is coming soon and will only be offered once properly licensed or through a licensed Florida broker. In the meantime, our Property Checks and Property Care plans keep your home protected.</p></details>
     <details class="faq-item"><summary>What's included in a property report?</summary><p>A cover page, 40+ photos, a full Property Status Report, an HD video walkthrough, a written summary, and an overall property status.</p></details>
     <details class="faq-item"><summary>Can you check on a vacant or unoccupied home?</summary><p>Yes — vacant and vacant-land properties are one of our most common visit types.</p></details>
@@ -739,7 +852,7 @@
     <details class="faq-item"><summary>Do you coordinate lawn care, pool service, or cleaning?</summary><p>Yes. We can coordinate lawn, pool, cleaning, pest control, repairs, and HVAC service so you don't have to manage multiple vendors.</p></details>
     <details class="faq-item"><summary>What happens if you find an emergency issue?</summary><p>We contact you immediately with photos and next steps, and can coordinate emergency contractor access if needed.</p></details>
     <details class="faq-item"><summary>Can second-home or seasonal owners use this service year-round?</summary><p>Yes, many of our clients use us specifically during the months they're away from their Florida property.</p></details>
-    <details class="faq-item"><summary>Do realtors use Acorn Property Group?</summary><p>Yes — realtors use us to keep listed or vacant properties presentable and to get alerted to any issues before showings.</p></details>
+    <details class="faq-item"><summary>Do realtors use Acorn House Group?</summary><p>Yes — realtors use us to keep listed or vacant properties presentable and to get alerted to any issues before showings.</p></details>
     <details class="faq-item"><summary>Can you assist with probate or estate properties?</summary><p>Yes, we regularly support estate representatives who need a local, trustworthy set of eyes on a property during the probate process.</p></details>
     <details class="faq-item"><summary>How do I get started?</summary><p>Schedule your first Property Check online, and a specialist will confirm your visit and follow up with your report within 24 hours.</p></details>
   </div>
@@ -772,7 +885,7 @@
 <footer>
   <div class="foot-grid">
     <div>
-      <a href="#" class="logo"><img src="https://i.imgur.com/eh1IVjV.png" alt="Acorn Property Group" style="height:110px;width:auto;"></a>
+      <a href="#" class="logo"><img src="https://i.imgur.com/eh1IVjV.png" alt="Acorn House Group" style="height:110px;width:auto;"></a>
       <p class="foot-copy">Property checks and ongoing care for homeowners and investors across our Florida service area.</p>
     </div>
     <div class="foot-cols">
@@ -788,10 +901,15 @@
         <a href="mailto:info@acornpropertygroup.com">info@acornpropertygroup.com</a>
         <a href="#">Sarasota, FL Office</a>
       </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="https://www.acornhouseacquisition.com/terms-of-service.html" target="_blank" rel="noopener">Terms of Service</a>
+        <a href="https://www.acornhouseacquisition.com/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
+      </div>
     </div>
   </div>
   <div class="foot-bottom">
-    <span>&copy; 2026 Acorn Property Group. All rights reserved.</span>
+    <span>&copy; 2026 Acorn House Group. All rights reserved.</span>
     <span>Property Checks &middot; Property Care &middot; Property Management</span>
   </div>
 </footer>
@@ -817,6 +935,7 @@
     <h3>Schedule Your Property Check</h3>
     <p class="bsub">Tell us a bit about the property and we'll confirm your first visit.</p>
     <close-form id="form_033k16FUHA2Y7T5U9pzlhy"></close-form>
+    <p class="booking-payment-note">Payment is collected securely once your visit is confirmed — no charge today. By submitting, you agree to our <a href="https://www.acornhouseacquisition.com/terms-of-service.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="https://www.acornhouseacquisition.com/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.</p>
   </div>
 </div>
 
@@ -828,6 +947,11 @@
   }
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
+
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
 
   // ---------- Who We Help profile modals ----------
   function openReportBanner(){
