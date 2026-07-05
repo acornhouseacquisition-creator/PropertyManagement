@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acorn Property Group | Florida Property Checks &amp; Property Care</title>
+<meta name="description" content="Property checks and ongoing property care for vacation homes, second homes, and investment properties across Sarasota, Manatee, Charlotte, Lee, Collier, Hillsborough, Pinellas, Broward, Palm Beach, Miami-Dade, St. Lucie, and Martin County, Florida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0a0a0a;
+    --charcoal:#141414;
+    --panel:#1a1a1a;
+    --gold:#FAC800;
+    --gold-deep:#B8860B;
+    --cream:#f5f1e8;
+    --line:rgba(250,200,0,0.18);
+    --muted:rgba(245,241,232,0.68);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--black);color:var(--cream);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;}
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  ul{list-style:none;}
+  .wrap{max-width:1320px;margin:0 auto;padding:0 40px;}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .eyebrow{color:var(--gold);font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;}
+  .eyebrow-line{width:56px;height:3px;background:var(--gold);margin:22px 0 24px;}
+  .rule-center{width:56px;height:3px;background:var(--gold);margin:22px auto 0;}
+  .section-head{text-align:center;max-width:700px;margin:0 auto 60px;}
+  .section-head h2{font-size:38px;color:var(--cream);margin-top:14px;}
+  .section-head p{margin-top:18px;font-size:15.5px;line-height:1.7;color:var(--muted);}
+
+  /* ---------- NAV ---------- */
+  header{position:sticky;top:0;z-index:50;background:#ffffff;border-bottom:1px solid rgba(184,134,11,0.25);transition:box-shadow .25s ease;}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;max-width:1320px;margin:0 auto;transition:padding .3s ease;}
+  header.scrolled{box-shadow:0 4px 18px rgba(0,0,0,0.08);}
+  header.scrolled .logo img{height:48px;}
+  header.scrolled nav{padding:8px 40px;}
+  .logo{display:flex;align-items:center;gap:12px;}
+  .logo img{height:78px;width:auto;transition:height .3s ease;}
+  .nav-links{display:flex;align-items:center;gap:28px;}
+  .nav-links a{font-size:13.5px;font-weight:600;letter-spacing:0.03em;color:var(--black);opacity:0.78;position:relative;padding-bottom:6px;transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;}
+  .nav-links a.active{color:var(--gold-deep);opacity:1;}
+  .nav-links a.active::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--gold);}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;letter-spacing:0.03em;padding:14px 26px;border-radius:3px;cursor:pointer;border:none;transition:transform .18s ease, box-shadow .18s ease;white-space:nowrap;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn-gold{background:var(--gold);color:var(--black);}
+  .btn-gold:hover{box-shadow:0 8px 24px rgba(250,200,0,0.28);}
+  .btn-outline{background:transparent;color:var(--cream);border:1px solid rgba(245,241,232,0.35);}
+  .btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+  .menu-toggle{display:none;background:none;border:none;color:var(--black);font-size:26px;cursor:pointer;}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;align-items:stretch;min-height:660px;overflow:hidden;}
+  .hero-copy{padding:80px 48px 80px 40px;display:flex;flex-direction:column;justify-content:center;max-width:640px;margin:0 auto;}
+  .hero-copy h1{font-size:46px;line-height:1.12;color:var(--cream);}
+  .hero-copy h1 .gold{color:var(--gold);}
+  .hero-copy p{margin-top:22px;font-size:16.5px;line-height:1.7;color:var(--muted);max-width:500px;}
+  .hero-ctas{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap;}
+  .hero-microcopy{margin-top:16px;font-size:13px;color:rgba(245,241,232,0.5);max-width:460px;}
+  .hero-media{position:relative;overflow:hidden;clip-path:polygon(9% 0, 100% 0, 100% 100%, 0% 100%);}
+  .hero-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+  .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,10,10,0.05), rgba(10,10,10,0.55) 100%);}
+  .diag-line{position:absolute;top:0;bottom:0;left:9%;width:2px;background:var(--gold);transform:skewX(-15deg);z-index:2;}
+  .stat-bar{position:absolute;left:8%;right:6%;bottom:36px;z-index:3;display:flex;background:rgba(10,10,10,0.82);border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+  .stat{flex:1;padding:20px 22px;display:flex;align-items:center;gap:14px;}
+  .stat + .stat{border-left:1px solid var(--line);}
+  .stat .play{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0;}
+  .stat strong{display:block;font-size:17px;color:var(--gold);font-family:'Fraunces',serif;}
+  .stat small{display:block;font-size:12.5px;color:var(--muted);line-height:1.3;margin-top:2px;}
+  .rating{display:flex;align-items:center;gap:4px;}
+  .rating svg{width:13px;height:13px;fill:var(--gold);}
+
+  /* ---------- TRUST BAR ---------- */
+  .trust-bar{background:var(--panel);border-bottom:1px solid var(--line);padding:22px 40px;}
+  .trust-inner{max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px 28px;}
+  .trust-item{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--cream);white-space:nowrap;}
+  .trust-item svg{width:16px;height:16px;color:var(--gold);flex-shrink:0;}
+
+  /* ---------- WHAT WE DO ---------- */
+  .services{padding:110px 40px 120px;}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1320px;margin:0 auto;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:38px 34px;transition:transform .22s ease, border-color .22s ease;position:relative;}
+  .card:hover{transform:translateY(-6px);border-color:rgba(250,200,0,0.45);}
+  .card.clickable{cursor:pointer;}
+  .card-cta{display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);}
+  .best-for{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);}
+  .best-for .bf-label{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .best-for ul{display:grid;gap:8px;}
+  .best-for li{display:flex;align-items:flex-start;gap:8px;font-size:13px;line-height:1.5;color:var(--muted);}
+  .best-for li svg{width:12px;height:12px;color:var(--gold);flex-shrink:0;margin-top:4px;}
+  .card-cta svg{width:13px;height:13px;transition:transform .25s ease;}
+  .card[aria-expanded="true"] .card-cta svg{transform:rotate(180deg);}
+  .card[aria-expanded="true"]{border-color:var(--gold);}
+
+  .expand-overlay{position:fixed;inset:0;background:rgba(6,6,6,0.8);z-index:190;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .3s ease;}
+  .expand-overlay.open{opacity:1;visibility:visible;}
+  .expand-panel{background:#ffffff;border-top:4px solid var(--gold);border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,0.45);max-width:1080px;width:100%;max-height:88vh;overflow-y:auto;position:relative;transform:translateY(18px);transition:transform .3s ease;}
+  .expand-overlay.open .expand-panel{transform:translateY(0);}
+  .expand-close{position:absolute;top:16px;right:18px;background:none;border:none;color:rgba(20,20,20,0.45);font-size:26px;cursor:pointer;line-height:1;z-index:2;}
+  .expand-close:hover{color:var(--gold-deep);}
+  .expand-video{position:relative;width:100%;aspect-ratio:21/9;background:#0d0d0d;border-radius:10px 10px 0 0;overflow:hidden;}
+  .expand-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .expand-video-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.6);}
+  .expand-video-placeholder .vplay{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);}
+  .expand-video-placeholder span{font-size:13px;letter-spacing:0.02em;text-align:center;padding:0 40px;}
+  .expand-panel-inner-wrap{padding:0 44px 44px;}
+  .expand-inner{padding-top:0;}
+  .option-tabs{display:flex;gap:10px;padding:30px 0 24px;flex-wrap:wrap;}
+  .option-tab{background:none;border:1px solid rgba(20,20,20,0.15);color:rgba(20,20,20,0.6);font-size:13px;font-weight:700;letter-spacing:0.03em;padding:11px 20px;border-radius:3px;cursor:pointer;transition:all .2s ease;}
+  .option-tab:hover{border-color:var(--gold-deep);color:#161616;}
+  .option-tab.active{background:#161616;color:var(--gold);border-color:#161616;}
+
+  /* light-mode styling for content living inside the popup banner */
+  .expand-panel .expand-head h3{color:#161616;}
+  .expand-panel .expand-head p{color:rgba(20,20,20,0.62);}
+  .expand-panel .hide-btn{display:none;}
+  .expand-panel .mh{color:var(--gold-deep);}
+  .expand-panel .checks-detail{background:#faf8f2;border-color:rgba(184,134,11,0.2);}
+  .expand-panel .checks-detail .mlist li{color:#161616;}
+  .expand-panel .plan-card{background:#faf8f2;border-color:rgba(184,134,11,0.2);}
+  .expand-panel .plan-card.featured{border-color:var(--gold-deep);}
+  .expand-panel .plan-card h3,.expand-panel .plan-card .ptag{color:#161616;}
+  .expand-panel .plan-card .ptag{color:var(--gold-deep);}
+  .expand-panel .plan-card .price{color:#161616;}
+  .expand-panel .plan-card .price span{color:rgba(20,20,20,0.55);}
+  .expand-panel .plan-card .pnote{color:rgba(20,20,20,0.6);}
+  .expand-panel .plan-card li{color:rgba(20,20,20,0.72);}
+  .expand-panel .plan-card li.plus-head{color:var(--gold-deep);}
+  .expand-panel .notify-box{background:#faf8f2;border-color:rgba(184,134,11,0.2);}
+  .expand-panel .notify-box p{color:rgba(20,20,20,0.62);}
+  .expand-panel .notify-form input{background:#ffffff;border-color:rgba(20,20,20,0.18);color:#161616;}
+  .expand-panel .btn-outline{border-color:rgba(20,20,20,0.25);color:#161616;}
+  .expand-panel .btn-outline:hover{border-color:var(--gold-deep);color:var(--gold-deep);}
+  body.expand-open{overflow:hidden;}
+
+  /* ---------- BOOKING MODAL (Close form embed) ---------- */
+  .booking-overlay{position:fixed;inset:0;background:rgba(6,6,6,0.8);z-index:210;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .3s ease;}
+  .booking-overlay.open{opacity:1;visibility:visible;}
+  .booking-panel{background:#ffffff;border-top:4px solid var(--gold);border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,0.45);max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:36px 34px 30px;position:relative;transform:translateY(18px);transition:transform .3s ease;}
+  .booking-overlay.open .booking-panel{transform:translateY(0);}
+  .booking-close{position:absolute;top:14px;right:16px;background:none;border:none;color:rgba(20,20,20,0.45);font-size:26px;cursor:pointer;line-height:1;}
+  .booking-close:hover{color:var(--gold-deep);}
+  .booking-panel h3{font-size:24px;color:#161616;margin-bottom:6px;}
+  .booking-panel p.bsub{font-size:14px;color:rgba(20,20,20,0.6);margin-bottom:18px;}
+  body.booking-open{overflow:hidden;}
+  .expand-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:30px;gap:20px;flex-wrap:wrap;}
+  .expand-head h3{font-size:26px;color:var(--cream);}
+  .expand-head p{font-size:14.5px;color:var(--muted);margin-top:8px;max-width:560px;}
+  .hide-btn{flex-shrink:0;background:none;border:1px solid rgba(245,241,232,0.3);color:var(--muted);font-size:12.5px;font-weight:700;letter-spacing:0.03em;text-transform:uppercase;padding:10px 18px;border-radius:3px;cursor:pointer;transition:border-color .2s ease, color .2s ease;}
+  .hide-btn:hover{border-color:var(--gold);color:var(--gold);}
+
+  .care-plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .checks-detail{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:36px 34px;display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .checks-detail .mlist{display:grid;gap:11px;}
+  .checks-detail .mlist li{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--cream);}
+  .checks-detail .mlist li svg{width:14px;height:14px;color:var(--gold);flex-shrink:0;}
+
+  .notify-box{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:40px 38px;text-align:center;max-width:560px;margin:0 auto;}
+  .notify-box p{font-size:14.5px;color:var(--muted);margin-bottom:24px;line-height:1.65;}
+  .notify-form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  .notify-form input{flex:1;min-width:220px;background:#0d0d0d;border:1px solid var(--line);color:var(--cream);padding:13px 16px;border-radius:3px;font-size:14px;font-family:'DM Sans',sans-serif;}
+  .notify-form input:focus{outline:2px solid var(--gold);}
+  .notify-success{color:var(--gold);font-size:14px;font-weight:600;margin-top:14px;display:none;}
+  .notify-success.show{display:block;}
+
+  /* ---------- MODAL ---------- */
+  .modal-overlay{position:fixed;inset:0;background:rgba(6,6,6,0.8);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .25s ease;}
+  .modal-overlay.open{opacity:1;visibility:visible;}
+  .modal-panel{background:#ffffff;border-top:4px solid var(--gold);border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,0.4);max-width:660px;width:100%;max-height:90vh;overflow-y:auto;padding:40px 44px 40px;position:relative;transform:translateY(16px);transition:transform .25s ease;}
+  .modal-overlay.open .modal-panel{transform:translateY(0);}
+  .modal-close{position:absolute;top:18px;right:20px;background:none;border:none;color:rgba(20,20,20,0.45);font-size:26px;cursor:pointer;line-height:1;}
+  .modal-close:hover{color:var(--gold-deep);}
+  .modal-eyebrow{color:var(--gold-deep);font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;}
+  .modal-panel h3{font-size:28px;color:#161616;margin-top:8px;margin-bottom:8px;}
+  .modal-panel .msub{font-size:14.5px;color:rgba(20,20,20,0.6);line-height:1.65;max-width:520px;}
+  .modal-video{position:relative;width:100%;aspect-ratio:16/9;background:#0d0d0d;border-radius:6px;overflow:hidden;margin:22px 0 8px;}
+  .modal-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .modal-video-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.6);}
+  .modal-video-placeholder .vplay{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);}
+  .modal-video-placeholder span{font-size:12.5px;letter-spacing:0.02em;text-align:center;padding:0 30px;}
+  .modal-panel h4.mh{font-size:13px;color:var(--gold-deep);text-transform:uppercase;letter-spacing:0.08em;margin-top:26px;margin-bottom:14px;}
+  .modal-panel .mlist{display:grid;gap:11px;}
+  .modal-panel .mlist li{display:flex;align-items:center;gap:9px;font-size:14px;color:#232323;}
+  .modal-panel .mlist li svg{width:14px;height:14px;color:var(--gold-deep);flex-shrink:0;}
+  .modal-panel .btn{margin-top:30px;}
+  .modal-fine{font-size:12px;color:rgba(20,20,20,0.45);text-align:center;margin-top:16px;}
+  body.modal-open{overflow:hidden;}
+
+  /* ---------- WHO CARD (profile style) ---------- */
+  .who-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:32px 28px;display:flex;flex-direction:column;align-items:flex-start;transition:border-color .2s ease;}
+  .who-card:hover{border-color:rgba(250,200,0,0.45);}
+  .who-card svg{width:30px;height:30px;color:var(--gold);flex-shrink:0;margin-bottom:16px;}
+  .who-card h3{font-size:17px;color:var(--cream);margin-bottom:8px;}
+  .who-card p{font-size:13.5px;color:var(--muted);line-height:1.65;margin-bottom:20px;flex:1;}
+  .see-btn{font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:0;}
+  .see-btn:hover{text-decoration:underline;}
+  .see-btn svg{width:13px;height:13px;margin:0;}
+
+  /* ---------- PLANS PRICE / BADGE ---------- */
+  .plan-card{position:relative;}
+  .popular-tag{position:absolute;top:-13px;left:28px;background:var(--gold);color:var(--black);font-size:10.5px;font-weight:800;letter-spacing:0.05em;padding:5px 12px;border-radius:3px;text-transform:uppercase;}
+  .plan-card .price{font-family:'Fraunces',serif;font-size:30px;color:var(--cream);margin-bottom:4px;}
+  .plan-card .price span{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--muted);font-weight:600;}
+  .plan-card li.plus-head{color:var(--gold);font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:0.05em;margin-top:4px;}
+  .card .cicon{width:56px;height:56px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);margin-bottom:26px;}
+  .card h3{font-size:21px;color:var(--cream);margin-bottom:12px;}
+  .card p{font-size:14.5px;line-height:1.65;color:var(--muted);}
+  .check-list{margin-top:18px;display:grid;gap:9px;}
+  .check-list li{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--muted);}
+  .check-list li svg{width:14px;height:14px;color:var(--gold);flex-shrink:0;}
+  .soon-badge{position:absolute;top:24px;right:24px;background:var(--gold);color:var(--black);font-size:10.5px;font-weight:800;letter-spacing:0.06em;padding:5px 10px;border-radius:3px;text-transform:uppercase;}
+  .card-price{display:inline-flex;align-items:baseline;gap:5px;margin:14px 0 4px;font-family:'Fraunces',serif;font-size:24px;color:var(--gold);font-weight:600;}
+  .card-price span{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);font-weight:600;}
+  .card-price.offer{
+    background:linear-gradient(135deg,#e63946,#c1121f);
+    color:#ffffff;padding:8px 16px;border-radius:6px;
+    box-shadow:0 8px 20px rgba(230,57,70,0.3);
+    display:inline-flex;align-items:baseline;gap:6px;
+  }
+  .card-price.offer span{color:rgba(255,255,255,0.85);}
+  .offer-tag{display:inline-block;background:#161616;color:#e63946;font-size:10px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:3px;margin-bottom:8px;}
+  .license-note{font-size:11.5px;color:rgba(245,241,232,0.45);line-height:1.5;margin-top:16px;font-style:italic;}
+  .expand-panel .license-note{color:rgba(20,20,20,0.45);margin-top:20px;}
+
+  /* ---------- WHO WE HELP ---------- */
+  .who{padding:100px 40px;background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .who-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .who-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:30px 26px;display:flex;align-items:center;gap:16px;transition:border-color .2s ease;}
+  .who-card:hover{border-color:rgba(250,200,0,0.45);}
+  .who-card svg{width:30px;height:30px;color:var(--gold);flex-shrink:0;}
+  .who-card span{font-size:15px;font-weight:600;color:var(--cream);}
+
+  /* ---------- WHY CHOOSE ---------- */
+  .why{padding:110px 40px;}
+  .why-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+  .why-card{padding:0 4px;}
+  .why-card .wicon{width:46px;height:46px;color:var(--gold);margin-bottom:20px;}
+  .why-card h3{font-size:18px;color:var(--cream);margin-bottom:10px;}
+  .why-card p{font-size:13.5px;line-height:1.65;color:var(--muted);}
+  .why-card .coord-list{margin-top:10px;font-size:12.5px;color:var(--gold);letter-spacing:0.02em;line-height:1.8;}
+
+  /* ---------- SAMPLE REPORT ---------- */
+  .report{padding:110px 40px;background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .report-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  .report-copy p{margin-top:18px;font-size:15.5px;line-height:1.75;color:var(--muted);max-width:460px;}
+  .report-copy ul{margin-top:26px;display:grid;gap:12px;max-width:440px;}
+  .report-ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+  .report-fine{margin-top:14px;font-size:12.5px;color:rgba(245,241,232,0.5);}
+  .report-copy li{display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--cream);}
+  .report-copy li svg{width:15px;height:15px;color:var(--gold);flex-shrink:0;}
+  .report-mock{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+  .report-mock img{width:100%;height:220px;object-fit:cover;}
+  .report-mock-body{padding:24px 26px;}
+  .report-mock-body .rstatus{display:inline-flex;align-items:center;gap:6px;background:rgba(250,200,0,0.12);color:var(--gold);font-size:11.5px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:5px 12px;border-radius:3px;margin-bottom:16px;}
+  .report-mock-body h4{font-size:16px;color:var(--cream);margin-bottom:12px;}
+  .report-mock-body .mini-check{display:grid;gap:8px;}
+  .report-mock-body .mini-check li{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);border-bottom:1px dashed var(--line);padding-bottom:7px;}
+  .report-mock-body .mini-check li span.ok{color:var(--gold);font-weight:700;}
+
+  .pdf-embed{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);}
+  .pdf-embed iframe{width:100%;height:640px;border:0;display:block;background:#3a3a3a;}
+  .pdf-embed-caption{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-top:1px solid var(--line);font-size:11.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--muted);}
+  .pdf-embed-caption strong{color:var(--gold);}
+
+  .report-media{position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--line);min-height:420px;}
+  .report-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+  .report-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,10,10,0.1), rgba(10,10,10,0.75) 100%);}
+  .report-media-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:2;text-align:center;padding:30px;}
+  .report-media-content .rm-icon{width:60px;height:60px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);}
+  .report-media-content span{color:var(--cream);font-size:13px;letter-spacing:0.03em;max-width:280px;}
+
+  .report-overlay{position:fixed;inset:0;background:rgba(6,6,6,0.85);z-index:220;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .3s ease;}
+  .report-overlay.open{opacity:1;visibility:visible;}
+  .report-banner{background:#ffffff;border-top:4px solid var(--gold);border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,0.45);max-width:820px;width:100%;max-height:90vh;overflow:hidden;position:relative;transform:translateY(18px);transition:transform .3s ease;display:flex;flex-direction:column;}
+  .report-overlay.open .report-banner{transform:translateY(0);}
+  .report-banner-close{position:absolute;top:14px;right:16px;background:none;border:none;color:rgba(20,20,20,0.5);font-size:26px;cursor:pointer;line-height:1;z-index:3;}
+  .report-banner-close:hover{color:var(--gold-deep);}
+  .report-banner iframe{width:100%;flex:1;height:78vh;border:0;}
+  .report-banner-caption{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-top:1px solid rgba(184,134,11,0.2);font-size:11px;letter-spacing:0.05em;text-transform:uppercase;color:rgba(20,20,20,0.5);}
+  .report-banner-caption strong{color:var(--gold-deep);}
+  body.report-open{overflow:hidden;}
+
+  .price-callout{
+    display:inline-flex;align-items:center;gap:14px;
+    background:linear-gradient(135deg,#e63946,#c1121f);
+    border-radius:8px;padding:14px 22px;margin:24px 0 6px;
+    box-shadow:0 10px 26px rgba(230,57,70,0.35);
+    position:relative;
+  }
+  .price-callout .pc-tag{position:absolute;top:-10px;left:18px;background:#161616;color:#fff;font-size:10px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:3px;}
+  .price-callout .pc-amount{font-family:'Fraunces',serif;font-size:34px;font-weight:700;color:#ffffff;line-height:1;}
+  .price-callout .pc-amount span{font-size:14px;font-weight:600;opacity:0.85;}
+  .price-callout .pc-label{color:#ffffff;font-size:13px;font-weight:600;line-height:1.4;max-width:220px;}
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps-sec{padding:110px 40px;}
+  .steps{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+  .step{text-align:center;position:relative;padding:0 16px;}
+  .step .snum{width:52px;height:52px;border-radius:50%;background:var(--gold);color:var(--black);font-family:'Fraunces',serif;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+  .step h4{font-size:16px;color:var(--cream);}
+  .step::after{content:"";position:absolute;top:26px;right:-16px;width:32px;height:1px;background:var(--line);}
+  .step:last-child::after{display:none;}
+
+  /* ---------- PLANS ---------- */
+  .plans{padding:110px 40px;background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .plans-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .plan-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:34px 28px;display:flex;flex-direction:column;}
+  .plan-card.featured{border-color:var(--gold);}
+  .plan-card .ptag{color:var(--gold);font-size:11.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
+  .plan-card h3{font-size:20px;color:var(--cream);margin-bottom:6px;}
+  .plan-card .pnote{font-size:13px;color:var(--muted);margin-bottom:20px;}
+  .plan-card ul{display:grid;gap:10px;flex:1;margin-bottom:24px;}
+  .plan-card li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}
+  .plan-card li svg{width:13px;height:13px;color:var(--gold);flex-shrink:0;}
+
+  /* ---------- SERVICE AREA ---------- */
+  .areas{padding:110px 40px;background:#ffffff;}
+  .areas h2{color:#161616;}
+  .areas .eyebrow{color:var(--gold-deep);}
+  .areas .eyebrow-line{background:var(--gold-deep);}
+  .areas-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .areas-copy p{margin-top:18px;font-size:15.5px;line-height:1.7;color:rgba(20,20,20,0.62);max-width:460px;}
+  .county-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:30px;max-width:460px;}
+  .county-list li{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:#161616;}
+  .county-list li svg{width:15px;height:15px;color:var(--gold-deep);flex-shrink:0;}
+  .areas-media{border-radius:8px;overflow:hidden;border:1px solid rgba(184,134,11,0.2);background:#f7f5f0;}
+  .areas-media img{width:100%;height:auto;display:block;}
+
+  /* ---------- TESTIMONIAL PLACEHOLDER ---------- */
+  .testi{padding:100px 40px;background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;}
+  .testi-box{max-width:640px;margin:0 auto;}
+  .testi-box h2{font-size:32px;color:var(--cream);margin-top:14px;}
+  .testi-box p{margin-top:18px;font-size:15.5px;line-height:1.7;color:var(--muted);}
+
+  /* ---------- FAQ ---------- */
+  .faq{padding:110px 40px;}
+  .faq-inner{max-width:820px;margin:0 auto;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item summary{cursor:pointer;list-style:none;padding:22px 0;font-size:15.5px;font-weight:600;color:var(--cream);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";color:var(--gold);font-size:20px;flex-shrink:0;}
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item p{padding:0 0 22px;font-size:14px;line-height:1.7;color:var(--muted);max-width:680px;}
+
+  /* ---------- RESOURCES ---------- */
+  .resources{padding:110px 40px;background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .resources-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .res-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:30px 28px;transition:border-color .2s ease;}
+  .res-card:hover{border-color:rgba(250,200,0,0.45);}
+  .res-card .rtag{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
+  .res-card h4{font-size:16.5px;color:var(--cream);margin-top:12px;line-height:1.4;}
+  .res-card .rlink{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:12.5px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:0.03em;}
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta{padding:110px 40px;text-align:center;background:linear-gradient(180deg, var(--black), #171310);}
+  .final-cta h2{font-size:38px;color:var(--cream);max-width:700px;margin:0 auto;}
+  .final-cta p{margin-top:16px;font-size:15.5px;color:var(--muted);}
+  .final-cta .btn{margin-top:30px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line);padding:60px 40px 36px;background:#ffffff;color:#1a1a1a;}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:40px;max-width:1320px;margin:0 auto;}
+  .foot-cols{display:flex;gap:64px;flex-wrap:wrap;}
+  .foot-copy{font-size:13px;color:rgba(20,20,20,0.6);margin-top:18px;max-width:320px;line-height:1.6;}
+  .foot-col h4{font-size:13px;letter-spacing:0.08em;color:var(--gold-deep);margin-bottom:16px;text-transform:uppercase;}
+  .foot-col a{display:block;font-size:14px;color:rgba(20,20,20,0.78);margin-bottom:10px;}
+  .foot-col a:hover{color:var(--gold-deep);}
+  .foot-bottom{margin-top:50px;padding-top:26px;border-top:1px solid rgba(0,0,0,0.1);max-width:1320px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;color:rgba(20,20,20,0.5);font-size:12.5px;flex-wrap:wrap;gap:10px;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 980px){
+    .hero{grid-template-columns:1fr;min-height:auto;}
+    .hero-media{clip-path:none;min-height:380px;}
+    .diag-line{display:none;}
+    .hero-copy{padding:64px 24px 40px;}
+    .hero-copy h1{font-size:34px;}
+    .cards,.who-grid,.why-grid,.plans-grid,.resources-grid,.care-plans-grid{grid-template-columns:1fr;}
+    .checks-detail{grid-template-columns:1fr;}
+    .expand-head{flex-direction:column;}
+    .report-inner,.areas-inner{grid-template-columns:1fr;gap:36px;}
+    .report-banner iframe{height:70vh;}
+    .report-banner{max-width:96vw;}
+    .steps{grid-template-columns:1fr;gap:28px;}
+    .step::after{display:none;}
+    .nav-links{display:none;}
+    .menu-toggle{display:block;}
+    nav,.services,.who,.why,.report,.steps-sec,.plans,.areas,.faq,.resources,.final-cta{padding-left:24px;padding-right:24px;}
+    .stat-bar{flex-direction:column;left:20px;right:20px;bottom:20px;}
+    .stat + .stat{border-left:none;border-top:1px solid var(--line);}
+    .trust-inner{justify-content:flex-start;}
+  }
+</style>
+<script src="https://webforms.closeiocdn.com/webforms.js" type="module" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="logo" aria-label="Acorn Property Group home">
+      <img src="https://i.imgur.com/eh1IVjV.png" alt="Acorn Property Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#areas">Service Area</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="javascript:void(0)" class="btn btn-gold" onclick="openBooking()">Schedule Your First Property Check</a>
+    <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Florida Property Care</div>
+    <div class="eyebrow-line"></div>
+    <h1>Stop Wondering What's Happening at <span class="gold">Your Florida Property.</span></h1>
+    <p>Property checks and local property specialists serving Sarasota, Manatee, Charlotte, Lee, Collier, Hillsborough, Pinellas, Broward, Palm Beach, Miami-Dade, St. Lucie, and Martin County. Whether you own a vacation home, second home, investment property, or vacant house, we become your trusted local eyes on the property.</p>
+    <div class="hero-ctas">
+      <a href="javascript:void(0)" class="btn btn-gold" onclick="openBooking()">Schedule Your First Property Check &rarr;</a>
+      <a href="#report" class="btn btn-outline">See Sample Report</a>
+    </div>
+    <p class="hero-microcopy">Start with a single Property Check — no subscription required. Many owners upgrade to monthly Property Care after seeing their first report.</p>
+  </div>
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1757359056339-22968344cce6?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Modern luxury home at dusk with palm trees">
+    <div class="diag-line"></div>
+    <div class="stat-bar">
+      <div class="stat">
+        <div class="play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        <div>
+          <strong style="font-size:15px;">Photo &amp; Video Reports</strong>
+          <small>Every visit, fully documented</small>
+        </div>
+      </div>
+      <div class="stat"><div><strong style="font-size:15px;">Local Property Specialists</strong><small>Built for Florida homeowners &amp; investors</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Insured</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Photo &amp; Video Reports</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Local Property Specialists</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Same-Day Visits Available</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Monthly Plans</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Built for Florida Homeowners &amp; Investors</div>
+  </div>
+</div>
+
+<!-- ================= WHAT WE DO ================= -->
+<section class="services" id="services">
+  <div class="section-head">
+    <div class="eyebrow">What We Do</div>
+    <h2>Complete Property Care Solutions</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="cards">
+    <div class="card clickable" onclick="toggleExpand('checks')" data-key="checks" tabindex="0" role="button" aria-expanded="false">
+      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="6.5"/><path d="M14.8 14.8L21 21"/></svg></div>
+      <h3>Property Checks</h3>
+      <p>For owners and investors who need one visit and a clear property status report.</p>
+      <span class="offer-tag">Special Offer</span>
+      <div class="card-price offer">$89<span>one-time visit</span></div>
+      <div class="best-for">
+        <div class="bf-label">Best For</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Wholesalers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Real estate investors</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Out of state buyers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Private lenders</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Realtors</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Probate or inherited homes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Vacant properties</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Snowbirds who need a one time check</li>
+        </ul>
+      </div>
+      <span class="card-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+    <div class="card clickable" onclick="toggleExpand('care')" data-key="care" tabindex="0" role="button" aria-expanded="false">
+      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg></div>
+      <h3>Property Care</h3>
+      <p>For homeowners who want ongoing peace of mind while they are away.</p>
+      <div class="card-price">$89<span>/month, from</span></div>
+      <div class="best-for">
+        <div class="bf-label">Best For</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Snowbirds</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Second home owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Vacation home owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Luxury homeowners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Absentee owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who need monthly maintenance coordination</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who don't want to manage lawn, pool, pest control, filters, vendors, and emergencies</li>
+        </ul>
+      </div>
+      <span class="card-cta">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+    <div class="card clickable" onclick="toggleExpand('management')" data-key="management" tabindex="0" role="button" aria-expanded="false">
+      <span class="soon-badge">Coming Soon</span>
+      <div class="cicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
+      <h3>Property Management</h3>
+      <p>For rental property owners who want full service management once available.</p>
+      <div class="best-for">
+        <div class="bf-label">Best For</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Long term rental owners</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Out of state landlords</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Investors with rental portfolios</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who want tenant placement</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners who need rent collection and maintenance coordination</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Owners planning to rent their second home in the future</li>
+        </ul>
+      </div>
+      <p class="license-note">Property management services will be offered only when properly licensed or through a licensed Florida broker.</p>
+      <span class="card-cta">Notify Me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+  </div>
+
+  <div class="expand-overlay" id="expandOverlay" onclick="if(event.target===this) closeExpand()">
+    <div class="expand-panel" id="expandPanel">
+      <button class="expand-close" onclick="closeExpand()" aria-label="Close">&times;</button>
+      <div class="expand-video" id="expandVideo"></div>
+      <div class="expand-panel-inner-wrap">
+        <div class="option-tabs" id="optionTabs">
+          <button class="option-tab" data-key="checks" onclick="toggleExpand('checks')">Property Checks</button>
+          <button class="option-tab" data-key="care" onclick="toggleExpand('care')">Property Care</button>
+          <button class="option-tab" data-key="management" onclick="toggleExpand('management')">Property Management</button>
+        </div>
+        <div class="expand-inner" id="expandInner"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE ================= -->
+<section class="why" id="why">
+  <div class="section-head">
+    <div class="eyebrow">Why People Choose Acorn</div>
+    <h2>The Difference Is In the Details</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="wicon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 21c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg></div>
+      <h3>Dedicated Property Specialist</h3>
+      <p>The same trusted person visits your property whenever possible, so they get to know it — and notice when something's off.</p>
+    </div>
+    <div class="why-card">
+      <div class="wicon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+      <h3>Reports in 24 Hours</h3>
+      <p>Photos, video, and clear recommendations delivered fast, so you're never left wondering.</p>
+    </div>
+    <div class="why-card">
+      <div class="wicon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+      <h3>We Coordinate Everything</h3>
+      <p>You don't call five different companies — you call us.</p>
+      <div class="coord-list">Lawn &middot; Pool &middot; Cleaning &middot; Pest Control &middot; Repairs &middot; HVAC</div>
+    </div>
+    <div class="why-card">
+      <div class="wicon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l9 4v6c0 5-4 8-9 10-5-2-9-5-9-10V6z"/><path d="M12 8v5"/><circle cx="12" cy="16" r="0.6" fill="currentColor"/></svg></div>
+      <h3>Emergency Response</h3>
+      <p>Storms, leaks, break-ins, power outages, or contractor access — we're the local eyes you call first.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHO WE HELP ================= -->
+<section class="who" id="who">
+  <div class="section-head">
+    <div class="eyebrow">Who We Help</div>
+    <h2>Choose the Profile That Best Describes You</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="who-grid">
+    <div class="who-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
+      <h3>Vacation Home Owners &amp; Snowbirds</h3>
+      <p>You own a home in Florida but live somewhere else for part of the year. We make sure your property stays safe, maintained, and ready whenever you return.</p>
+      <button class="see-btn" onclick="openModal('snowbird')">See Everything Included <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="who-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg>
+      <h3>Second Home Owners</h3>
+      <p>Whether you visit once a month or a few times a year, we become your trusted local team. Your home is always ready when you arrive.</p>
+      <button class="see-btn" onclick="openModal('secondhome')">See Everything Included <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="who-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg>
+      <h3>Real Estate Investors</h3>
+      <p>Perfect for buy &amp; hold, BRRRR, wholesalers, flippers, and private lenders who need verified eyes on a property.</p>
+      <button class="see-btn" onclick="openModal('investors')">See Everything Included <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="who-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      <h3>Probate &amp; Estate Representatives</h3>
+      <p>For inherited properties. We help maintain vacant homes until they're sold or occupied.</p>
+      <button class="see-btn" onclick="openModal('probate')">See Everything Included <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="who-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12l2.5 2.5L16 9"/><circle cx="12" cy="12" r="9"/></svg>
+      <h3>Realtors</h3>
+      <p>Vacant listing care, luxury listing checks, contractor coordination, and open house preparation.</p>
+      <button class="see-btn" onclick="openModal('realtors')">See Everything Included <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="who-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="8" height="8"/><rect x="13" y="8" width="8" height="8"/><path d="M7 8V5h10v3"/></svg>
+      <h3>Absentee Property Owners</h3>
+      <p>For owners who simply don't live nearby. We become your local contact.</p>
+      <button class="see-btn" onclick="openModal('absentee')">See Everything Included <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAMPLE REPORT ================= -->
+<section class="report" id="report">
+  <div class="report-inner">
+    <div class="report-copy">
+      <div class="eyebrow">See It For Yourself</div>
+      <div class="eyebrow-line"></div>
+      <h2 style="font-size:36px;">A Real Property Report, Not a Promise</h2>
+      <p>Every property check ends with a clear report so you know exactly what's happening — no guesswork, no vague check-ins.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Cover page with visit date &amp; specialist</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>40+ timestamped photos</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Full Property Status Report</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>HD video walkthrough</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Summary &amp; recommendations</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Overall property status</li>
+      </ul>
+      <div class="price-callout">
+        <span class="pc-tag">Special Offer</span>
+        <div class="pc-amount">$89<span> one-time check</span></div>
+        <div class="pc-label">See exactly what's included in a full Property Check for this price.</div>
+      </div>
+      <div class="report-ctas">
+        <a href="javascript:void(0)" class="btn btn-gold" onclick="openReportBanner()">View Sample Report</a>
+        <a href="javascript:void(0)" class="btn btn-outline" onclick="openBooking()">Schedule Your First Property Check</a>
+      </div>
+      <p class="report-fine">See the real sample report — the same kind you'll receive after every visit.</p>
+    </div>
+    <div class="report-media">
+      <img src="https://images.unsplash.com/photo-1757359056339-22968344cce6?fm=jpg&q=80&w=900&auto=format&fit=crop" alt="Modern Florida home at dusk">
+      <div class="report-media-content">
+        <div class="rm-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3v5h5"/><path d="M6 3h8l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2z"/><path d="M8 13h8M8 17h5"/></svg></div>
+        <span>Click "View Sample Report" to open a real Property Check Report.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="report-overlay" id="reportOverlay" onclick="if(event.target===this) closeReportBanner()">
+  <div class="report-banner">
+    <button class="report-banner-close" onclick="closeReportBanner()" aria-label="Close">&times;</button>
+    <iframe src="sample-property-report.pdf" title="Sample Property Check Report"></iframe>
+    <div class="report-banner-caption">
+      <span>Sample Property Check Report</span>
+      <strong>3 Pages &middot; Scroll to View</strong>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="steps-sec" id="how">
+  <div class="section-head">
+    <div class="eyebrow">How It Works</div>
+    <h2>Simple, From Booking to Peace of Mind</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="snum">1</div><h4>Schedule Online</h4></div>
+    <div class="step"><div class="snum">2</div><h4>Property Specialist Visits</h4></div>
+    <div class="step"><div class="snum">3</div><h4>Receive Your Report</h4></div>
+    <div class="step"><div class="snum">4</div><h4>Relax</h4></div>
+  </div>
+</section>
+
+<!-- ================= SERVICE AREA ================= -->
+<section class="areas" id="areas">
+  <div class="areas-inner">
+    <div class="areas-copy">
+      <div class="eyebrow">Where We Work</div>
+      <div class="eyebrow-line"></div>
+      <h2 style="font-size:36px;color:#161616;">Florida Service Area</h2>
+      <p>We're currently serving the following Florida counties, with more coverage added as our team grows.</p>
+      <ul class="county-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Sarasota County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Manatee County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Charlotte County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Lee County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Collier County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Hillsborough County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Pinellas County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Broward County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Palm Beach County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Miami-Dade County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>St. Lucie County</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Martin County</li>
+      </ul>
+    </div>
+    <div class="areas-media">
+      <img src="https://i.imgur.com/Kytxt4h.jpg" alt="Map of Florida counties served by Acorn Property Group">
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="section-head">
+    <div class="eyebrow">Frequently Asked Questions</div>
+    <h2>Everything You Want to Know</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="faq-inner">
+    <details class="faq-item" open><summary>What is a Property Check?</summary><p>A Property Check is a one-time, in-person visit where a property specialist inspects your home inside and out, documents everything with photos and video, and delivers a full report.</p></details>
+    <details class="faq-item"><summary>How quickly can someone visit my property?</summary><p>Same-day and next-day visits are often available depending on your area — reach out and we'll confirm the soonest opening.</p></details>
+    <details class="faq-item"><summary>Can I schedule recurring visits?</summary><p>Yes. Our Property Care plans include monthly or bi-weekly visits so your property is checked on a consistent schedule.</p></details>
+    <details class="faq-item"><summary>Can you check my house after a hurricane?</summary><p>Yes — storm-related checks are one of the most common reasons owners call us. We prioritize post-storm visits whenever possible.</p></details>
+    <details class="faq-item"><summary>Do you work with real estate investors?</summary><p>Yes. Many of our clients are investors who need eyes on vacant or tenant-free properties between showings, renovations, or closings.</p></details>
+    <details class="faq-item"><summary>Do you provide videos, not just photos?</summary><p>Every Property Check includes an HD video walkthrough in addition to 40+ photos.</p></details>
+    <details class="faq-item"><summary>Can you meet a contractor at my property?</summary><p>Yes, we can coordinate contractor access as part of a Property Check or ongoing Property Care plan.</p></details>
+    <details class="faq-item"><summary>Do you collect mail and packages?</summary><p>Yes, mail and package checks are included in every Property Check visit.</p></details>
+    <details class="faq-item"><summary>What areas of Florida do you serve?</summary><p>We currently serve counties along Florida's Gulf and East Coasts — see our full Service Area section above.</p></details>
+    <details class="faq-item"><summary>Is Acorn Property Group insured?</summary><p>Insured coverage is coming soon as we build out our service area. We're happy to share our current status when you reach out.</p></details>
+    <details class="faq-item"><summary>Do you offer property management?</summary><p>Full-service property management is coming soon and will only be offered once properly licensed or through a licensed Florida broker. In the meantime, our Property Checks and Property Care plans keep your home protected.</p></details>
+    <details class="faq-item"><summary>What's included in a property report?</summary><p>A cover page, 40+ photos, a full Property Status Report, an HD video walkthrough, a written summary, and an overall property status.</p></details>
+    <details class="faq-item"><summary>Can you check on a vacant or unoccupied home?</summary><p>Yes — vacant and vacant-land properties are one of our most common visit types.</p></details>
+    <details class="faq-item"><summary>How do I know if something is wrong with my property?</summary><p>Your report will flag any issues found — leaks, HVAC problems, exterior damage, or anything else — along with clear recommendations.</p></details>
+    <details class="faq-item"><summary>Do you coordinate lawn care, pool service, or cleaning?</summary><p>Yes. We can coordinate lawn, pool, cleaning, pest control, repairs, and HVAC service so you don't have to manage multiple vendors.</p></details>
+    <details class="faq-item"><summary>What happens if you find an emergency issue?</summary><p>We contact you immediately with photos and next steps, and can coordinate emergency contractor access if needed.</p></details>
+    <details class="faq-item"><summary>Can second-home or seasonal owners use this service year-round?</summary><p>Yes, many of our clients use us specifically during the months they're away from their Florida property.</p></details>
+    <details class="faq-item"><summary>Do realtors use Acorn Property Group?</summary><p>Yes — realtors use us to keep listed or vacant properties presentable and to get alerted to any issues before showings.</p></details>
+    <details class="faq-item"><summary>Can you assist with probate or estate properties?</summary><p>Yes, we regularly support estate representatives who need a local, trustworthy set of eyes on a property during the probate process.</p></details>
+    <details class="faq-item"><summary>How do I get started?</summary><p>Schedule your first Property Check online, and a specialist will confirm your visit and follow up with your report within 24 hours.</p></details>
+  </div>
+</section>
+
+<!-- ================= RESOURCES ================= -->
+<section class="resources" id="resources">
+  <div class="section-head">
+    <div class="eyebrow">Property Care Resources</div>
+    <h2>Guides to Protecting Your Florida Property</h2>
+    <div class="rule-center"></div>
+  </div>
+  <div class="resources-grid">
+    <a class="res-card" href="#"><div class="rtag">Guide</div><h4>How to Protect a Vacant Home in Florida</h4><span class="rlink">Read More &rarr;</span></a>
+    <a class="res-card" href="#"><div class="rtag">Checklist</div><h4>Vacation Home Checklist Before You Leave</h4><span class="rlink">Read More &rarr;</span></a>
+    <a class="res-card" href="#"><div class="rtag">Guide</div><h4>Preparing Your Home for Hurricane Season</h4><span class="rlink">Read More &rarr;</span></a>
+    <a class="res-card" href="#"><div class="rtag">Guide</div><h4>Signs of Water Damage in Vacant Homes</h4><span class="rlink">Read More &rarr;</span></a>
+    <a class="res-card" href="#"><div class="rtag">FAQ</div><h4>How Often Should Someone Check My Property?</h4><span class="rlink">Read More &rarr;</span></a>
+    <a class="res-card" href="#"><div class="rtag">Guide</div><h4>What to Expect From Your Property Report</h4><span class="rlink">Read More &rarr;</span></a>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta" id="contact">
+  <h2>Ready to Stop Worrying About Your Property?</h2>
+  <p>Schedule your first property check today.</p>
+  <a href="javascript:void(0)" class="btn btn-gold" onclick="openBooking()">Schedule Your First Property Check</a>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a href="#" class="logo"><img src="https://i.imgur.com/eh1IVjV.png" alt="Acorn Property Group" style="height:110px;width:auto;"></a>
+      <p class="foot-copy">Property checks and ongoing care for homeowners and investors across our Florida service area.</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#services">Services</a>
+        <a href="#areas">Service Area</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get In Touch</h4>
+        <a href="tel:17869828464">(786) 982-8464</a>
+        <a href="mailto:info@acornpropertygroup.com">info@acornpropertygroup.com</a>
+        <a href="#">Sarasota, FL Office</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>&copy; 2026 Acorn Property Group. All rights reserved.</span>
+    <span>Property Checks &middot; Property Care &middot; Property Management</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this) closeModal()">
+  <div class="modal-panel">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <div class="modal-video" id="modalVideo"></div>
+    <div class="modal-body">
+      <div class="modal-eyebrow" id="modalEyebrow">Who We Help</div>
+      <h3 id="modalTitle"></h3>
+      <p class="msub" id="modalSub"></p>
+      <h4 class="mh">How It Works</h4>
+      <ul class="mlist" id="modalList"></ul>
+      <a href="javascript:void(0)" class="btn btn-gold" onclick="closeModal(); openBooking();">Schedule Your First Property Check</a>
+    </div>
+  </div>
+</div>
+
+<div class="booking-overlay" id="bookingOverlay" onclick="if(event.target===this) closeBooking()">
+  <div class="booking-panel">
+    <button class="booking-close" onclick="closeBooking()" aria-label="Close">&times;</button>
+    <h3>Schedule Your Property Check</h3>
+    <p class="bsub">Tell us a bit about the property and we'll confirm your first visit.</p>
+    <close-form id="form_033k16FUHA2Y7T5U9pzlhy"></close-form>
+  </div>
+</div>
+
+<script>
+  const siteHeader = document.querySelector('header');
+  const shrinkAt = 60;
+  function handleScroll(){
+    siteHeader.classList.toggle('scrolled', window.scrollY > shrinkAt);
+  }
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  // ---------- Who We Help profile modals ----------
+  function openReportBanner(){
+    document.getElementById('reportOverlay').classList.add('open');
+    document.body.classList.add('report-open');
+  }
+  function closeReportBanner(){
+    document.getElementById('reportOverlay').classList.remove('open');
+    document.body.classList.remove('report-open');
+  }
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeReportBanner(); });
+
+  function openBooking(){
+    document.getElementById('bookingOverlay').classList.add('open');
+    document.body.classList.add('booking-open');
+  }
+  function closeBooking(){
+    document.getElementById('bookingOverlay').classList.remove('open');
+    document.body.classList.remove('booking-open');
+  }
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeBooking(); });
+
+  const checkSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>';
+
+  // TODO: replace with your real YouTube video ID (the part after "v=" or after "youtu.be/").
+  // Leave blank to show a placeholder instead of an embed.
+  const PROPERTY_VISIT_VIDEO_ID = "";
+
+  const profiles = {
+    snowbird: {
+      title: "Vacation Home Owners & Snowbirds",
+      sub: "You own a home in Florida but live somewhere else for part of the year. We make sure your property stays safe, maintained, and ready whenever you return.",
+      items: ["Dedicated Property Specialist","Scheduled property visits","Interior and exterior checks","40+ photos","HD video walkthrough","Mail and package check","Water leak check","HVAC and thermostat check","Storm preparation","Storm damage assessments","Vendor coordination","Lawn and pool supervision","Monthly property report"],
+      videoId: PROPERTY_VISIT_VIDEO_ID
+    },
+    secondhome: {
+      title: "Second Home Owners",
+      sub: "Whether you visit once a month or a few times a year, we become your trusted local team. Your home is always ready when you arrive.",
+      items: ["Dedicated Property Specialist","Scheduled property visits","40+ photos","HD video walkthrough","Mail and package check","Water leak & HVAC checks","Vendor coordination","Arrival preparation before your visit"],
+      videoId: PROPERTY_VISIT_VIDEO_ID
+    },
+    investors: {
+      title: "Real Estate Investors",
+      sub: "Perfect for buy & hold, BRRRR, wholesalers, flippers, and private lenders who need verified eyes on a property.",
+      items: ["Property verification reports","Rehab progress reports","Contractor oversight","Occupancy verification","Insurance documentation","Property photos","Video walkthroughs"],
+      videoId: PROPERTY_VISIT_VIDEO_ID
+    },
+    probate: {
+      title: "Probate & Estate Representatives",
+      sub: "For inherited properties — we help maintain vacant homes until they're sold or occupied.",
+      items: ["Dedicated Property Specialist","Scheduled vacancy checks","Mail and package check","Water leak & HVAC checks","Lawn and exterior upkeep coordination","Detailed reporting for estate records"],
+      videoId: PROPERTY_VISIT_VIDEO_ID
+    },
+    realtors: {
+      title: "Realtors",
+      sub: "Vacant listing care, luxury listing checks, contractor coordination, and open house preparation.",
+      items: ["Vacant listing care","Luxury listing checks","Contractor coordination","Open house preparation","Photos & video for listing updates","Rapid response between showings"],
+      videoId: PROPERTY_VISIT_VIDEO_ID
+    },
+    absentee: {
+      title: "Absentee Property Owners",
+      sub: "For owners who simply don't live nearby — we become your local contact.",
+      items: ["Dedicated Property Specialist","Scheduled property visits","40+ photos","HD video walkthrough","Mail and package check","Vendor coordination","Emergency call notification"],
+      videoId: PROPERTY_VISIT_VIDEO_ID
+    }
+  };
+
+  function openModal(key){
+    const p = profiles[key];
+    if(!p) return;
+    document.getElementById('modalTitle').textContent = p.title;
+    document.getElementById('modalSub').textContent = p.sub;
+    document.getElementById('modalList').innerHTML = p.items.map(i => `<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>${i}</li>`).join('');
+
+    const videoEl = document.getElementById('modalVideo');
+    if(p.videoId){
+      videoEl.innerHTML = `<iframe src="https://www.youtube.com/embed/${p.videoId}" title="Property visit walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    } else {
+      videoEl.innerHTML = `<div class="modal-video-placeholder">
+        <div class="vplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        <span>See What Happens During a Property Visit &mdash; a real 2-minute visit, not a sales video. (Add your YouTube video ID to enable this embed.)</span>
+      </div>`;
+    }
+
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.classList.add('modal-open');
+  }
+  function closeModal(){
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.body.classList.remove('modal-open');
+    document.getElementById('modalVideo').innerHTML = '';
+  }
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape'){ closeModal(); } });
+
+  // ---------- Expandable "What We Do" panel ----------
+  const expandPanel = document.getElementById('expandPanel');
+  const expandInner = document.getElementById('expandInner');
+  const cardEls = document.querySelectorAll('.card.clickable');
+  let currentKey = null;
+
+  function planCard(tag, price, note, items, cta, featured){
+    return `<div class="plan-card${featured ? ' featured' : ''}">
+      ${featured ? '<span class="popular-tag">Most Popular</span>' : ''}
+      <div class="ptag">${tag}</div>
+      <div class="price">${price}<span>/month</span></div>
+      <p class="pnote">${note}</p>
+      <ul>${items.map(i => `<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>${i}</li>`).join('')}</ul>
+      <a href="#contact" class="btn ${featured ? 'btn-gold' : 'btn-outline'}">${cta}</a>
+    </div>`;
+  }
+
+  // TODO: add your real YouTube video IDs here (the part after "v=" or after "youtu.be/").
+  // Leave blank to show a placeholder banner until each video is ready.
+  const serviceVideoIds = {
+    checks: "",
+    care: "",
+    management: ""
+  };
+
+  const templates = {
+    checks: () => `
+      <div class="expand-head">
+        <div><h3>Property Checks &mdash; One-Time Visit</h3><p>A single, fully documented visit to your property. No subscription required.</p></div>
+        <button class="hide-btn" onclick="closeExpand()">Hide Details</button>
+      </div>
+      <div class="checks-detail">
+        <div>
+          <h4 class="mh">Every Visit Includes</h4>
+          <ul class="mlist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>40+ photos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>HD video walkthrough</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Detailed property report</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Mail check</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mh">&nbsp;</h4>
+          <ul class="mlist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Water leak check</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>HVAC check</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Exterior &amp; interior review</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10"/></svg>Peace of mind</li>
+          </ul>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="btn btn-gold" style="margin-top:26px;display:inline-flex;" onclick="closeExpand(); openBooking();">Schedule Your First Property Check</a>
+    `,
+    care: () => `
+      <div class="expand-head">
+        <div><h3>Property Care Plans</h3><p>Ongoing, scheduled care with a dedicated Property Specialist. Choose the level that fits your property.</p></div>
+        <button class="hide-btn" onclick="closeExpand()">Hide Plans</button>
+      </div>
+      <div class="care-plans-grid">
+        ${planCard('Essential Care','$89','One visit a month, fully documented.',
+          ['One property visit every month','40+ photos','HD video walkthrough','Mail check','Water leak check','HVAC check','Detailed report','Emergency call notification'],'Get Started', false)}
+        ${planCard('Complete Care','$149','Everything in Essential, plus vendor coordination.',
+          ['Everything in Essential','Lawn service coordination','Pool service coordination','Pest control coordination','Air filter replacement every 60 days','Vendor scheduling','Contractor access','Quarterly home condition review'],'Get Started', true)}
+        ${planCard('Elite Property Care','$249','Two visits a month, priority everything.',
+          ['Everything in Complete','Two property visits per month','Priority emergency response','Storm preparation and damage assessment','Home arrival preparation','Grocery delivery coordination (optional)','Vehicle check (if stored)','Utility monitoring and concierge requests','Dedicated Property Specialist'],'Get Started', false)}
+      </div>
+    `,
+    management: () => `
+      <div class="expand-head">
+        <div><h3>Property Management &mdash; Coming Soon</h3><p>Full-service rental management is on the way. Be the first to know when it launches in your area.</p></div>
+        <button class="hide-btn" onclick="closeExpand()">Hide</button>
+      </div>
+      <div class="notify-box">
+        <p>Leave your email and we'll notify you the moment Property Management goes live near you.</p>
+        <form class="notify-form" onsubmit="return handleNotifySubmit(event)">
+          <input type="email" required placeholder="you@example.com" aria-label="Email address">
+          <button type="submit" class="btn btn-gold">Notify Me</button>
+        </form>
+        <div class="notify-success" id="notifySuccess">You're on the list &mdash; we'll be in touch.</div>
+      </div>
+      <p class="license-note" style="text-align:center;">Property management services will be offered only when properly licensed or through a licensed Florida broker.</p>
+    `
+  };
+
+  function toggleExpand(key){
+    cardEls.forEach(c => c.setAttribute('aria-expanded', c.dataset.key === key ? 'true' : 'false'));
+    document.querySelectorAll('.option-tab').forEach(t => t.classList.toggle('active', t.dataset.key === key));
+    expandInner.innerHTML = templates[key]();
+
+    const videoId = serviceVideoIds[key];
+    const videoEl = document.getElementById('expandVideo');
+    const captions = {
+      checks: "See a real Property Check in action.",
+      care: "See what a month of Property Care looks like.",
+      management: "See what's coming with Property Management."
+    };
+    if(videoId){
+      videoEl.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}" title="${key} overview video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    } else {
+      videoEl.innerHTML = `<div class="expand-video-placeholder">
+        <div class="vplay"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        <span>${captions[key]} (Add a YouTube video ID in serviceVideoIds to enable this embed.)</span>
+      </div>`;
+    }
+
+    currentKey = key;
+    document.getElementById('expandOverlay').classList.add('open');
+    document.body.classList.add('expand-open');
+  }
+
+  function closeExpand(){
+    document.getElementById('expandOverlay').classList.remove('open');
+    document.body.classList.remove('expand-open');
+    document.getElementById('expandVideo').innerHTML = '';
+    cardEls.forEach(c => c.setAttribute('aria-expanded', 'false'));
+    document.querySelectorAll('.option-tab').forEach(t => t.classList.remove('active'));
+    currentKey = null;
+  }
+
+  function handleNotifySubmit(e){
+    e.preventDefault();
+    document.getElementById('notifySuccess').classList.add('show');
+    e.target.reset();
+    return false;
+  }
+
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && currentKey) closeExpand(); });
+
+  cardEls.forEach(c => {
+    c.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        toggleExpand(c.dataset.key);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
